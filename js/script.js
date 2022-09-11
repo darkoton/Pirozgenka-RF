@@ -461,7 +461,6 @@ myPopup(); // ПОПАПЫ */
 
 
 let productsCategory = () => {
-  console.log(1);
   let productsCategoryNav = document.querySelectorAll('.products__category'),
     productsCategoryContent = document.querySelectorAll('.products__categories-dish'),
     productsCategoryName
@@ -509,8 +508,32 @@ let compilationCategory = () => {
   }
 }
 
+let catalogCategory = () => {
+  let catalogCategoryNav = document.querySelectorAll('.catalog__category'),
+    catalogCategoryContent = document.querySelectorAll('.catalog__content'),
+    catalogCategoryName
+  catalogCategoryNav.forEach(item => {
+    item.addEventListener('click', selectСompilationCategoryNav)
+  })
+
+  function selectСompilationCategoryNav() {
+    catalogCategoryNav.forEach(item => {
+      item.classList.remove('tab-active');
+    });
+    this.classList.add('tab-active')
+    catalogCategoryName = this.getAttribute('data-tab-name')
+    selectcatalogCategoryContent(catalogCategoryName)
+  }
+  function selectcatalogCategoryContent(catalogCategoryName) {
+    catalogCategoryContent.forEach(item => {
+      item.classList.contains(catalogCategoryName) ? item.classList.add('tab-active') : item.classList.remove('tab-active')
+    })
+  }
+}
+
 productsCategory()
-compilationCategory(); // ТАБЫ 
+compilationCategory()
+catalogCategory(); // ТАБЫ 
 
 //< " СКРИПТЫ " >=============================================================================================================>//
 
