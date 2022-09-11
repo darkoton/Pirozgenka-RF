@@ -59,20 +59,24 @@
 </header>
       <main class="page">
 
-        <div class="catalog__path"><a href="index.html" class="path path-no-active">Главная &nbsp &nbsp > </a> <a
-            class="path" href="catalog.html"> &nbsp &nbsp Каталог </a></div>
-        <div class="catalog__categories">
-  <div class="catalog__category tab-active" data-tab-name="catalog-category-1">Торты</div>
-  <div class="catalog__category" data-tab-name="catalog-category-2">капкейки</div>
-  <div class="catalog__category" data-tab-name="catalog-category-3">имбирные пряники</div>
-  <div class="catalog__category" data-tab-name="catalog-category-4">макаруны</div>
-  <div class="catalog__category" data-tab-name="catalog-category-5">шоколад</div>
-  <div class="catalog__category" data-tab-name="catalog-category-6">другие сладости</div>
+        <div class="catalog__container _container">
+  <div class="catalog__body">
+    <div class="catalog__path"><a href="index.html" class="path path-no-active">Главная &nbsp &nbsp > </a> <a
+        class="path" href="catalog.html"> &nbsp &nbsp Каталог </a></div>
+    <div class="catalog__categories">
+      <div class="catalog__category tab-active" data-tab-name="catalog-category-1">Торты</div>
+      <div class="catalog__category" data-tab-name="catalog-category-2">капкейки</div>
+      <div class="catalog__category" data-tab-name="catalog-category-3">имбирные пряники</div>
+      <div class="catalog__category" data-tab-name="catalog-category-4">макаруны</div>
+      <div class="catalog__category" data-tab-name="catalog-category-5">шоколад</div>
+      <div class="catalog__category" data-tab-name="catalog-category-6">другие сладости</div>
+    </div>
+  </div>
 </div>
         <div class="cakes catalog__content tab-active catalog-category-1">
   <div class="cakes__wrapper">
     <div class="cakes__container _container">
-      <div class="cakes__body catalog__body">
+      <div class="cakes__body catalog__items">
         <article class="cakes__cake catalog__item">
           <img src="./img/cakes/childrens.png" alt="" class="cakes__img catalog__img">
           <div class="cakes__title catalog__title">Детские</div>
@@ -223,7 +227,7 @@
         <div class="cupcakes catalog__content catalog-category-2">
   <div class="cupcakes__wrapper">
     <div class="cupcakes__container _container">
-      <div class="cupcakes__body catalog__body">
+      <div class="cupcakes__body catalog__items">
         <article class="cupcakes__cupcake catalog__item">
           <img src="./img/cupcakes/childrens.png" alt="" class="cupcakes__img catalog__img">
           <div class="cupcakes__title catalog__title">Детские</div>
@@ -366,7 +370,7 @@
         <div class="gingerbreads catalog__content catalog-category-3">
   <div class="gingerbreads__wrapper">
     <div class="gingerbreads__container _container">
-      <div class="gingerbreads__body catalog__body">
+      <div class="gingerbreads__body catalog__items">
         <article class="gingerbreads__gingerbread catalog__item">
           <img src="./img/gingerbreads/logo-photo.png" alt="" class="gingerbreads__img catalog__img">
           <div class="gingerbreads__title catalog__title">С ЛОГОТИПом И ФОТО</div>
@@ -433,7 +437,7 @@
         <div class="macarons catalog__content catalog-category-4">
   <div class="macarons__wrapper">
     <div class="macarons__container _container">
-      <div class="macarons__body catalog__body">
+      <div class="macarons__body catalog__items">
         <article class="macarons__macaron catalog__item">
           <img src="./img/macarons/classic.png" alt="" class="macarons__img catalog__img">
           <div class="macarons__title catalog__title">КЛАССИЧЕСКИЕ</div>
@@ -515,7 +519,7 @@
         <div class="chocolates catalog__content catalog-category-5">
   <div class="chocolates__wrapper">
     <div class="chocolates__container _container">
-      <div class="chocolates__body catalog__body">
+      <div class="chocolates__body catalog__items">
         <article class="chocolates__chocolate catalog__item">
           <img src="./img/chocolates/14.02.png" alt="" class="chocolates__img catalog__img">
           <div class="chocolates__title catalog__title">14 февраля</div>
@@ -537,7 +541,7 @@
         <div class="others catalog__content catalog-category-6">
   <div class="others__wrapper">
     <div class="others__container _container">
-      <div class="others__body catalog__body">
+      <div class="others__body catalog__items">
         <article class="others__other catalog__item">
           <img src="./img/other/cakepops.png" alt="" class="others__img catalog__img">
           <div class="others__title catalog__title">кейкпопсы</div>
@@ -556,9 +560,415 @@
     </div>
   </div>
 </div>
+        <div class="statement">
+  <div class="statement__wrapper">
+    <div class="statement__container _container">
+      <div class="statement__body">
+        <div class="statement__left">
+          <h2 class="statement__title">Оставьте заявку на просчет сладостей и получите готовое решение вашего заказа
+          </h2>
+          <div class="statement__form">
+            <div class="statement__feedback">Выбор способа получения расчета:</div>
+            <div class="statement__buttons">
+              <div class="statement__button" onclick="selectWay('phone')"><span
+                  class="statement__icon icon-phone"></span>
+                Обратный звонок</div>
+              <div class="statement__button" onclick="selectWay('email')"><span class=" statment__icon icon-email">
+                </span>
+                E-mail</div>
+            </div>
+
+            <div class="statement__input">
+              <div class="statement__input-title">E-mail*</div>
+              <input type="text" placeholder="pochta@mail.ru">
+            </div>
+            <div class="statement__input">
+              <div class="statement__input-title">Расскажите, что бы вы хотели заказать?*</div>
+              <div class="statement__input-body">
+                <textarea type="text" class="u-order" placeholder="Торт на день рождения дочери"></textarea>
+              </div>
+            </div>
+            <label for='example' class="statement__file">Прикрепите пример оформления для более точного рассчета</label>
+            <input id='example' type="file" class="statement__file-input">
+            <div class="statement__confirm-body"><button class="statement__confirm">ОТПРАВИТЬ</button></div>
+          </div>
+        </div>
+        <div class="statement__right"><img class="statement__img" src="./img/statement/macarons.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function selectWay(select) {
+    if (select == 'phone') {
+      document.querySelector('.statement__feedback').innerHTML = 'Выбор способа получения расчета: обратный звонок'
+    } else if (select == 'email') {
+      document.querySelector('.statement__feedback').innerHTML = 'Выбор способа получения расчета: e-mail'
+    }
+  }
+</script>
+        <div class="superiority catalog__content tab-active catalog-category-1">
+  <div class="superiority__wrapper">
+    <div class="superiority__container _container">
+      <div class="superiority__body">
+        <div class="superiority__text-body">
+
+          <div class="superiority__left">
+            <p class="superiority__left-text">
+              «Ты что, с ума сошёл? Дорогой друг издалека прилетает на минуточку — а у вас нет торта!»
+            </p>
+            <p class="superiority__left-text">
+              Знакомая цитата? Как точно подметил известный герой! Чтобы избежать конфуза, можно купить торт в Москве с
+              доставкой в кондитерской Пироженка.рф заранее.
+            </p>
+            <p class="superiority__left-text">
+              Заказать торт в Москве популярный запрос среди местных жителей. Что мы можем предложить вам для решения
+              этой проблемы?
+            </p>
+          </div>
+          <div class="superiority__right superiority__items">
+            <div class="superiority__item">
+              <h4 class="superiority__title">У НАС ВЫ МОЖЕТЕ КУПИТЬ ТОРТ С ДОСТАВКОЙ СРОЧНО</h4>
+              <p class="superiority__text">Часто складывается ситуация, когда позвали на праздник, а ты не готов. Или
+                так закрутился на работе, что забыл оформить торт на заказ с доставкой. У нас вы можете оформить такой
+                заказ без доплат. Мы понимаем, как важно порадовать близких, и помогаем вам в этом!</p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">ЗАКАЗАТЬ ТОРТ В МОСКВЕ СО СВОИМ ДИЗАЙНОМ</h4>
+              <p class="superiority__text">В нашем каталоге больше 1000 товаров, но мы понимаем, что среди него может не
+                быть «того самого». Вы можете прислать картинку из интернета или от руки нарисованный образец. А может
+                быть это будет рисунок вашего ребенка? В любом случае мы поможем оформить торт на заказ с доставкой
+                согласно вашим пожеланиям.</p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">ЕСТЬ ЛИ У НАС ДОСТАВКА ТОРТОВ В МОСКВЕ?</h4>
+              <p class="superiority__text">Конечно! Ведь недостаточно просто изготовить вкусный десерт и красиво его
+                украсить. Самое главное довезти его в целости и сохранности, а так же с соблюдением всех температурных
+                режимов. Доставка тортов в Москве – важная часть работы нашей кондитерской.</p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">КАКАЯ ЦЕНА МОЖЕТ БЫТЬ У ТОРТА НА ЗАКАЗ?</h4>
+              <p class="superiority__text" style="margin-bottom: 10px">Если кондитерская использует натуральные
+                ингредиенты, обустраивает
+                производство по всем нормам, чтобы выпечка была не только вкусная, но и безопасная, а так же в ней
+                работают профессионалы своего дела – цена не может быть очень низкой. Мы придерживаемся политики
+                «цена=качество». Поэтому наши десерты вкусные, красивые и стоят своих денег.
+              </p>
+              <p class="superiority__text">
+                Если вы решили купить торт с доставкой – свяжитесь с нами, и мы поможем определиться с вашими
+                пожеланиями! </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="superiority catalog__content catalog-category-2">
+  <div class="superiority__wrapper">
+    <div class="superiority__container _container">
+      <div class="superiority__body">
+        <div class="superiority__text-body">
+
+          <div class="superiority__left">
+            <h2 class="superiority__left-title">КАПКЕЙКИ В МОСКВЕ НЕДОРОГО: ОПТОМ И В РОЗНИЦУ
+            </h2>
+            <p class="superiority__left-text">
+              Загадочное слово «капкейк» родом из английского языка. Оно складывается из двух частей: cup (чашка) и
+              cake (торт). То есть буквально капкейки с мастикой или кремом представляют собой миниатюрный тортик
+              размером с чашку. В XIX веке такие кондитерские изделия действительно выпекались в металлических чашках.
+              Сегодня для этого используют специальные круглые пергаментные капсулы.
+            </p>
+            <p class="superiority__left-text">
+              Тесто для вкусных капкейков в нашей кондитерской готовится так же, как и для больших тортов. Его основу
+              составляют свежее сливочное масло, яйца, мука и сахар. Все ингредиенты особым образом взбиваются, чтобы
+              готовый капкейк имел нежный вкус и таял во рту.
+            </p>
+            <p class="superiority__left-text">
+              Для оформления сладкого стола на день рождения, Новый год или другой праздник миниатюрные кексы подходят
+              великолепно. Украсить капкейк можно тысячью различных способов. Георгины, розы и герберы из масляного
+              крема, сердечки и звёздочки, забавные зверушки, тематические капкейки к 8 Марта, 23 февраля и Дню
+              влюблённых – идеи для декора безграничны! Вы можете не просто воспользоваться готовым вариантом
+              украшения из нашего каталога, а предложить кондитерам магазина капкейков «Пироженка» собственный эскиз.
+              Ваш индивидуальный заказ будет изготовлен уже на следующий день.
+            </p>
+          </div>
+
+
+          <div class="superiority__right superiority__items">
+            <div class="superiority__item">
+              <h4 class="superiority__title">Мини-кексы – это не только вкусно и необыкновенно красиво, но ещё и удобно
+              </h4>
+              <ul class="superiority__list">
+                <li>Каждое пирожное подаётся в отдельной упаковке.</li>
+                <li>Нет необходимости подавать каждому гостю тарелки и столовые приборы.</li>
+                <li>Не нужно разрезать торт на несколько частей и мыть посуду после праздника.</li>
+                <li>Каждый выбирает для себя лакомство по собственному вкусу, будь то ягодный, фруктовый или шоколадный
+                  капкейк.</li>
+              </ul>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                А если вы всё же поклонник больших тортов, интернет-магазин «Пироженка» готов с удовольствием предложить
+                изумительные бисквиты для детского дня рождения, свадьбы или другого торжества. Причем такая покупка –
+                это еще и существенная экономия. Ведь наши цены за штуку ниже средних!
+              </p>
+              <p class="superiority__text">
+                Никаких ограничений! Минимального заказа в нашей кондитерской не существует! Заказать капкейки с
+                доставкой в Москве можно поштучно или целым набором. При желании можно заказать даже один капкейк или
+                по одной штуке каждого вида этого потрясающего лакомства. Оригинальный вариант для праздников –
+                кондитерская композиция, состоящая из большого торта и группы тематических капкейков, которые можно
+                расставить ярусами.</p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">С НАМИ УДОБНО!</h4>
+              <p class="superiority__text">
+                Ещё не определились, где заказать и купить капкейки в Москве по доступной
+                цене?
+              </p>
+
+              <ul class="superiority__list" style="margin-top: 23px;">
+                <li>Компания «Пироженка» – это исключительно проверенное качество, подтвержденное сертификатами.</li>
+                <li>Ингредиенты для теста и начинки для наших ароматных капкейков и тортиков поставляются из США,
+                  Великобритании, Бельгии.
+                </li>
+                <li>Красители для декоративной отделки пирожных имеют исключительно натуральную основу, в изделиях нет
+                  никакой «химии».
+                </li>
+                <li>Продукция всегда восхитительно свежая – ведь наш интернет-магазин капкейков в Москве работает только
+                  под заказ.
+                </li>
+              </ul>
+
+
+
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                Вот почему наши изделия без опасений можно давать детям, которые всегда приходят в полный восторг,
+                получив лакомство, как на картинке!
+              </p>
+
+              <p class="superiority__text">
+                Мы работаем без выходных, поэтому у вас есть возможность купить капкейки для домашнего чаепития или
+                оформить сладкий стол для гостей именно тогда, когда пожелаете. Ваш заказ будет доставлен на следующие
+                сутки после подачи заявки или даже непосредственно в тот же день. При покупке на сумму от 7500 рублей
+                доставка по Москве будет бесплатной!
+              </p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="superiority catalog__content catalog-category-3">
+  <div class="superiority__wrapper">
+    <div class="superiority__container _container">
+      <div class="superiority__body">
+        <div class="superiority__text-body">
+
+          <div class="superiority__left">
+            <p class="superiority__left-text">
+              Этот запах имбиря и корицы не спутать ни с чем. Когда приближаются праздники, имбирные пряники в Москве
+              становятся очень популярным запросом. В кондитерской Пироженка.рф мы делаем имбирные пряники на заказ по
+              типовым дизайнам, и по индивидуальным эскизам.
+            </p>
+            <p class="superiority__left-text">
+              Купить имбирные пряники в Москве можно во многих кондитерских. Но в нашей, вы получаете не просто вкусное
+              печенье, а десерт с многолетней историй. Мы используем семейный рецепт, уже 7 лет. Начинки тортов, кремов,
+              глазурей терпели изменения, но только не рецепт имбирных пряников, которые вы можете купить у нас в
+              Москве.
+            </p>
+
+          </div>
+
+
+          <div class="superiority__right superiority__items">
+            <div class="superiority__item">
+              <h4 class="superiority__title">КАК ФОРМИРУЕТСЯ ЦЕНА НА ИМБИРНЫЕ ПРЯНИКИ?
+              </h4>
+
+
+              <p class="superiority__text">
+                Вкус этого десерта – основная причина его популярности. Поэтому так важно не экономить на ингредиентах.
+                Мы используем мед высшего качества, натуральное сливочное масло 82,5% жирности и самые ароматные специи,
+                чтобы получить лучший результат.
+              </p>
+              <p class="superiority__text">
+                Второй фактор это сложный дизайн. Имбирные пряники на заказ можно украсить при помощи фотопечати, или
+                просто залив разноцветной глазурью.
+                А можно подключить фантазию и мастерство и приготовить самые красивые имбирные пряники в Москве,
+                используя различные техники росписи. Второй вариант будет более трудозатратным и, соответственно, более
+                дорогостоящим.
+              </p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">КУПИТЬ ИМБИРНЫЕ ПРЯНИКИ С ДОСТАВКОЙ ОПТОМ</h4>
+
+              <p class="superiority__text" style="margin-bottom:10px;">
+                Часто наши клиенты это магазины, компании или эвент агентства. В нашей кондитерской оптимизировано
+                производство таким образом, чтобы изготавливать имбирный пряник в любом количестве, и отправлять на
+                доставку только продукт высокого качества по вкусу и внешнему виду. Цена на имбирные пряники при большом
+                количестве в заказе, конечно, будет отличаться от цен на сайте.
+              </p>
+              <p class="superiority__text">
+                Чтобы уточнить стоимость, сроки изготовления и другие вопросы – свяжитесь с нами удобным для вас
+                способом. Наши менеджеры помогут оформить заказ и решат все ваши вопросы!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="superiority catalog__content catalog-category-4">
+  <div class="superiority__wrapper">
+    <div class="superiority__container _container">
+      <div class="superiority__body">
+        <div class="superiority__text-body">
+
+          <div class="superiority__left">
+            <p class="superiority__left-text">
+              Вы много слышали про французское пирожное, но никогда не пробовали? Или, возможно, вы настоящий ценитель и
+              готовы купить макаруны оптом для дня рождения или корпоративного праздника?
+            </p>
+            <p class="superiority__left-text">
+              Французский десерт из миндальной муки уже давно не новинка в России. Однако по-настоящему вкусные
+              пирожные,
+              изготовленные по всем правилам, сложно найти. Мы изготавливаем макаруны на заказ, оттачивая рецепт годами.
+              Только миндальная мука, яичный белок и сахарная пудра. Никаких примесей! А в составе начинки в макарунах
+              только лучший шоколад и фруктовые пюре.
+            </p>
+
+          </div>
+
+
+          <div class="superiority__right superiority__items">
+            <div class="superiority__item">
+              <h4 class="superiority__title">ЗА ЧТО ЛЮБЯТ МАКАРУНЫ
+              </h4>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                Купить макаруны можно во многих кондитерских, это очень популярный десерт. Но не все знают, что же это
+                за
+                лакомство. Некоторые называют их печеньем, но это в корне неверно. Нежная текстура «крышечек»,
+                пропитанных
+                вкусной начинкой на основе шоколада, позволяет называть макаронс самым вкусным пирожным.
+              </p>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                Несмотря на маленький размер, эти красивые пирожные легко стилизовать под любой праздник. Например, для
+                большого корпоративного торжества можно заказать оптом макаруны с логотипом, для семейного события – с
+                любой сахарной росписью или поздравительной надписью. Современные технологии работы с пищевыми чернилами
+                поздравляют нанести любой узор со множеством деталей, он будет таким же чётким, как если бы его печатали
+                на принтере.
+              </p>
+              <p class="superiority__text">
+                Купить макаруны – отличная идея, если важно, чтобы гости попробовали лакомство сразу же, не тратя время
+                на
+                поиски тарелок, ножей, вилок и другой посуды.
+              </p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">НАСТОЯЩИЕ МАКАРУНЫ ОТ «ПИРОЖЕНКА.РФ»</h4>
+              <p class="superiority__text" style="margin-bottom:10px;">
+                Макаруны в Москве предлагают многие кондитерские, но в «Пироженка.рф» вы найдете настоящие французские
+                сладости. Мы предлагаем вам на выбор более 20 начинок из базового списка, а также можем сделать нечто
+                эксклюзивное по вашим пожеланиям!
+              </p>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                При небольшом размере цена на макаруны может показаться высокой. На это есть две основные причины:
+                стоимость сырья и сложный процесс приготовления. Качественная миндальная мука итальянского производства,
+                изысканные сорта шоколада и самые качественные пюре стоят дорого. Высоко оценивается и труд кондитера,
+                который умеет правильно готовить этот французский десерт. Но при покупке оптом цена на макаруны будет
+                ниже. Также мы предлагаем скидки при раннем заказе.
+              </p>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                Оформите заказ и попробуйте самые вкусные макаруны в Москве! Мы поставляем десерты по всей Московской
+                области. А если вы хотите устроить маленький праздник, закажите для виновника торжества
+                доставку-сюрприз!
+              </p>
+              <p class="superiority__text">
+                Чтобы купить макаруны в Москве или с доставкой по области, напишите нам на электронную почту или в
+                WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="superiority catalog__content catalog-category-5">
+  <div class="superiority__wrapper">
+    <div class="superiority__container _container">
+      <div class="superiority__body">
+        <div class="superiority__text-body">
+
+          <div class="superiority__left">
+            <p class="superiority__left-text">
+              Шоколад можно купить в Москве не только в виде привычной для нас плитки в магазине, но и заказать шоколад
+              ручной работы на заказ с доставкой. При первой заказе вас, как покупателя, наверное волнуют некоторые
+              вопросы, давайте их разберем.
+            </p>
+          </div>
+
+
+          <div class="superiority__right superiority__items">
+            <div class="superiority__item">
+              <h4 class="superiority__title">КАКАЯ ЦЕНА НА ШОКОЛАД РУЧНОЙ РАБОТЫ?
+              </h4>
+              <p class="superiority__text" style="margin-bottom: 10px;">
+                Для ответа на этот вопрос, стоит рассказать, из каких ингредиентов, в нашей кондитерской, создается
+                данная
+                продукция. Шоколад с доставкой по Москве мы делаем из высококачественного бельгийского продукта.
+                Добавляем
+                в некоторые изделия сублимированные ягоды, рисовые хрустящие шарики и другие, натуральные и вкусные
+                ингредиенты.
+              </p>
+              <p class="superiority__text">
+                Цена на этот шоколад отличается от той, что вы увидите в обычном магазине, но и вкусовые качества этой
+                продукции в разы качественнее и лучше, нежели у изделий массового производства. Нежный, но при этом
+                насыщенный вкус, таит у вас во рту, а не в руках, благодаря правильному темперированию, это просто
+                наслаждение. А яркие акценты в виде ягод только оттеняют его и дополняют общий фон вкуснейшей плитки.
+              </p>
+            </div>
+
+            <div class="superiority__item">
+              <h4 class="superiority__title">МОЖНО ЛИ КУПИТЬ ФИГУРНЫЙ ШОКОЛАД В МОСКВЕ? </h4>
+              <p class="superiority__text" style="margin-bottom:10px;">
+                В нашей кондитерской однозначно да. Вы можете купить фигурный шоколад с доставкой на любой праздник и
+                для
+                любого повода. Мы делаем всю продукцию под заказ по вашим пожеланиям, но важно понимать, что для
+                создания
+                изделий нужны определенные формы. Если вы решите оформить заказ на большое количество одинакового
+                фигурного шоколада с доставкой, мы закажем для вас пресс форму по индивидуальному эскизу. В остальных
+                случаях вы можете выбрать шоколад с доставкой по Москве из нашего каталога.
+              </p>
+              <p class="superiority__text">
+                Что купить шоколад с доставкой по Москве и области напишите нам на почту или в Whatsapp. Наши менеджеры
+                проконсультируют вас по всем вопросам и оформят ваш заказ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
         
-
       </main>
     </div>
     <footer class="footer">
