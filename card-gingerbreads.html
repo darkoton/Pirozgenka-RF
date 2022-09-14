@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="./img/page/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Пироженка РФ</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+  <div class="header__wrapper">
+    <div class="header__container _container">
+      <div class="header__body">
+        <div class="header__top">
+          <div class="header__networks">
+            <div class="header__network"><span class="icon-telegram"></span></div>
+            <div class="header__network"><span class="icon-whatsapp"></span></div>
+            <div class="header__network"><span class="icon-vk"></span></div>
+          </div>
+          <div class="header__logo"><img src="./img/page/logo.png" alt=""></div>
+          <div class="header__info">
+            <a class="header__phone" href="tel:+7 (499) 322-28-29">+7 (499) 322-28-29</a>
+            <div class="header__question">Задать вопрос</div>
+          </div>
+        </div>
+        <div class="header__bottom" data-spollers="992,max">
+          <div data-spoller class="header__button-open">Меню</div>
+          <div class="header__menu">
+            <div class="header__menu-items">
+              <a class="header__menu-item" href="index.html">Главная</a>
+              <a class="header__menu-item" href="catalog.html">Каталог</a>
+              <a class="header__menu-item">Услуги</a>
+              <a class="header__menu-item">Праздники</a>
+              <a class="header__menu-item">Корпоративным
+                клиентам</a>
+              <a class="header__menu-item" href="delivery.html">Доставка</a>
+              <a class="header__menu-item">О нас</a>
+              <a class="header__menu-item" href="basket.html">
+                <span class="header__icon icon-backet-buy">
+                </span>
+                <span>Перейти в
+                  корзину </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+      <main class="page">
+        <div class="calc">
+  <div class="calc__wrapper">
+    <div class="calc__container _container">
+      <div class="calc__body">
+        <div class="calc__path path__body"><a href="index.html" class="path path-no-active">Главная &nbsp &nbsp > </a>
+          <a class="path path-no-active" href="catalog.html"> &nbsp &nbsp Каталог &nbsp &nbsp ></a> <a
+            class="path path-no-active" href="catalog.html"> &nbsp &nbsp Имбирные пряники &nbsp &nbsp ></a>
+          <a class="path path-no-active" href="#"> &nbsp &nbsp 14 февраля &nbsp &nbsp ></a>
+          <a class="path" href="card-cupcakes.html"> &nbsp &nbsp Маленькие сердца</a>
+        </div>
+
+        <div class="calc__result">
+          <div class="calc__computation computation">
+            <div class="computation__left">
+              <div class="computation__img-body">
+                <img src="./img/calculator/gingerbreads-main.png" alt="" class="computation__img">
+                <div class="computation__img-text-body"><span class="computation__img-text"> Параметры пряников на
+                    фото</span>
+                  <ul class="computation__img-option">
+                    <li><span class="black">Цена:</span>
+                      <span class="space"></span>
+                      <span class="brown">130 руб/шт</span>
+                    </li>
+                    <li><span class="black">Вес:</span>
+                      <span class="space"></span>
+                      <span class="brown">120 г</span>
+                    </li>
+                    <li><span class="black">Диаметр:</span>
+                      <span class="space"></span>
+                      <span class="brown">5-7 см</span>
+                    </li>
+                    <li><span class="black">Тесто:</span>
+                      <span class="space"></span>
+                      <span class="brown">Пряничное</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="computation__right">
+              <h2 class="computation__title">Имбирные пряники «Маленькие сердца»</h2>
+              <div class="computation__mini-info">
+                <div class="computation__price">
+                  <span class="computation__mini-img"><img src="./img/calculator/rub.png" alt=""></span> <span>130
+                    руб/шт</span>
+                </div>
+                <div class="computation__decor">
+                  <span class="computation__mini-img"><img src="./img/calculator/wallet.png" alt=""></span>
+                  <span>Минимальный заказ - 3 шт</span>
+                </div>
+              </div>
+              <div class="computation__options">
+                <div class="computation__amout-body">
+                  <div class="computation__amout-title computation__subtitle">Количество:
+                    <span class="amount-value"></span>
+                  </div>
+                  <!-- <input type="range" class="computation__range"> -->
+                  <!-- most basic, used for Knobs demo -->
+                  <div class="computation__amounter">
+                    <span class="computation__remove" onclick="amounter(false)">-</span>
+                    <span class="amount-value"></span>
+                    <span class="computation__add" onclick="amounter(true)">+</span>
+                  </div>
+                </div>
+
+                <div class="computation__filling-body">
+                  <h5 class="computation__filling-title"
+                    onclick="document.querySelector('.computation__filling-list').classList.toggle('hidden'); document.querySelector('.computation__filling-title').classList.toggle('active')">
+                    <label>Выберите вид теста</label> <span class="icon-arrow-down"></span>
+                  </h5>
+                  <ul class="computation__filling-list hidden" style="overflow: hidden;">
+                    <li onclick="fillingSelect('Пряничное тесто')" class="computation__filling-li"><img
+                        src="./img/calculator/dough1.png" alt="">
+                      Пряничное тесто </li>
+                    <li onclick="fillingSelect('Песочное тесто')" class="computation__filling-li"><img
+                        src="./img/calculator/dough2.png" alt="">
+                      Песочное тесто </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="computation__bottom">
+                <div class="computation__bottom-text">
+                  <div class="computation__bottom-price">780 руб</div>
+                  <div class="computation__amout">Цена за <span class="amount-value"></span> пряников</div>
+                </div>
+                <div class="computation__confirm-body">
+                  <button class="computation__confirm">ОФОРМИТЬ ЗАКАЗ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__infos" data-one-spoller data-spollers>
+            <div class="calc__info-item">
+              <div class="calc__info-title _active" data-spoller>В стоимость входит <span
+                  class="icon-arrow-down"></span>
+              </div>
+              <div class="calc__info-body">
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/decor-mini.png" alt=""></div> <span
+                    class="calc__info-subtitle">
+                    Декор, как на
+                    фотографии
+                  </span>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/gift.png" alt=""></div> <span
+                    class="calc__info-subtitle"> Упаковка,как на фото
+                  </span>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/gingerbreads-icon.png" alt=""></div><span
+                    class="calc__info-subtitle">
+                    Возможность заменить
+                    тесто на пряничное
+                  </span>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/heart.png" alt=""></div><span
+                    class="calc__info-subtitle"> Изготовление с любовью
+                    и заботой о вас
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="calc__info-item">
+              <div class="calc__info-title" data-spoller>Условия доставки <span class="icon-arrow-down"></span>
+              </div>
+              <div class="calc__info-body">
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/timer.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle">
+                      Доставка осуществляется
+                      в удобное для вас время
+                      с интервалом в 2-4 часа
+                    </span>
+                    <span class="calc__info-desc">
+                      В период высокой загруженности
+                      интервал может быть увеличен
+                    </span>
+                  </div>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/car.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle"> Стоимость
+                      доставки - 600 руб
+                    </span>
+                    <span class="calc__info-desc">
+                      по Москве в пределах МКАД
+                    </span>
+                  </div>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/car.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle">
+                      Стоимость доставки + 50 руб/км
+                    </span>
+                    <span class="calc__info-desc">
+                      за пределами МКАД
+                    </span>
+                  </div>
+                </div>
+
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/car.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle"> Бесплатная
+                      доставка
+                    </span>
+                    <span class="calc__info-desc">
+                      При заказе на сумму свыше 7500 руб
+                    </span>
+                  </div>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/wallet.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle"> 1000 руб
+                    </span>
+                    <span class="calc__info-desc">
+                      Минимальная стоимость заказа
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="calc__info-item">
+              <div class="calc__info-title" data-spoller>Условия оплаты <span class="icon-arrow-down"></span>
+              </div>
+              <div class="calc__info-body">
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/rub2.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle">
+                      При доставке
+                    </span>
+                    <span class="calc__info-desc">
+                      Оплата производится курьеру наличными при получении
+                    </span>
+                  </div>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/card.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle"> При самовывозе
+                    </span>
+                    <span class="calc__info-desc">
+                      Оплата производится картой минимум за день до даты получения (после оформления заказа с вами
+                      свяжется наш менеджер и подскажет доступные способы оплаты)
+                    </span>
+                  </div>
+                </div>
+                <div class="calc__info">
+                  <div class="calc__info-img"><img src="./img/calculator/time.png" alt=""></div>
+                  <div class="calc__info-text">
+                    <span class="calc__info-subtitle">
+                      Вы можете оплатить заказ заранее
+                    </span>
+                    <span class="calc__info-desc">
+                      И мы доставим ваш подарок-сюрприз получателю. Укажите об этом в комментариях при оформлении
+                      заказа.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let amount = 6
+    document.querySelectorAll('.amount-value')[0].textContent = amount + ' шт'
+    document.querySelectorAll('.amount-value')[1].textContent = amount + ' шт'
+    document.querySelectorAll('.amount-value')[2].textContent = amount
+
+    function amounter(a) {
+      String.prototype.replaceAt = function (index, replacement) {
+        return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+      }
+
+      let price
+
+
+
+      if (a) {
+        amount++
+        document.querySelectorAll('.amount-value')[0].textContent = amount + ' шт'
+        document.querySelectorAll('.amount-value')[1].textContent = amount + ' шт'
+        document.querySelectorAll('.amount-value')[2].textContent = amount
+      } else if (amount > 3) {
+        amount--
+        document.querySelectorAll('.amount-value')[0].textContent = amount + ' шт'
+        document.querySelectorAll('.amount-value')[1].textContent = amount + ' шт'
+        document.querySelectorAll('.amount-value')[2].textContent = amount
+      }
+
+      price = amount * 130
+
+
+      let subPrice = String(price)[String(price).length - 4]
+      if (String(price).length == 4) {
+        document.querySelector('.computation__bottom-price').textContent = String(price).replaceAt(String(price).length - 5, `${subPrice}.`) + ' руб'
+      } else if (String(price).length >= 5) {
+        document.querySelector('.computation__bottom-price').textContent = String(price)[0] + String(price).replaceAt(String(price).length - 5, `${subPrice}.`) + ' руб'
+      } else {
+        document.querySelector('.computation__bottom-price').textContent = price + ' руб'
+      }
+    }
+
+    function fillingSelect(select) {
+      document.querySelector('.computation__filling-title > label').textContent = select
+      document.querySelector('.computation__filling-list').classList.toggle('hidden');
+      document.querySelector('.computation__filling-title').classList.toggle('active')
+    }
+
+
+  </script>
+        <div class="filling">
+  <div class="filling__wrapper">
+    <div class="filling__container _container">
+      <div class="filling__body">
+        <h2 class="filling__main-title">Тесто</h2>
+        <div class="filling__grid gingerbreads__grid">
+          <div class="filling__item">
+            <div class="filling__img"><img src="./img/filling/dough1.png" alt=""></div>
+
+            <div class=" filling__text">
+              <div class="filling__title">Пряничное тесто</div>
+            </div>
+          </div>
+          <div class="filling__item">
+            <div class="filling__img"><img src="./img/filling/dough2.png" alt=""></div>
+
+            <div class=" filling__text">
+              <div class="filling__title">Пряничное тесто</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <div class="recommended">
+  <div class="recommended__wrapper">
+    <div class="recommended__container _container">
+      <div class="recommended__body">
+        <h2 class="recommended__main-title">рекомендуемые товары</h2>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <div class="recommended__slider-body">
+          <div class="swiper recommended__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads1.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Love </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads2.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Ты мои крылья</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads3.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Эйфелева башня</h3>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads4.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Мишки</h3>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads1.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Love </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads2.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Ты мои крылья</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads3.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Эйфелева башня</h3>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads4.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Мишки</h3>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads1.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Love </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads2.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Ты мои крылья</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads3.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Эйфелева башня</h3>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__body">
+                  <div class="recommended__img">
+                    <img src="./img/recommended/gingerbreads4.png " alt="">
+                  </div>
+                  <div class="recommended__text">
+                    <h3 class="recommended__title">Мишки</h3>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="recommended__swiper-prev icon-arrow-left"></div>
+          <div class="recommended__swiper-next icon-arrow-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".recommended__slider", {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    simulateTouch: true, grabCursor: true,
+    navigation: {
+      nextEl: ".recommended__swiper-next",
+      prevEl: ".recommended__swiper-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      650: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      960: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1030: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      },
+    },
+  });
+</script>
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__container _container">
+      <div class="footer__body">
+        <div class="footer__left">
+          <ul class="footer__col">
+            <li class="footer__item">Главная</li>
+            <li class="footer__item">Каталог</li>
+            <li class="footer__item">Услуги</li>
+            <li class="footer__item">О нас</li>
+            <li class="footer__item">Доставка и оплата</li>
+          </ul>
+          <ul class="footer__col">
+            <li class="footer__item">Праздники</li>
+            <li class="footer__item">Корпоративным клиентам</li>
+            <li class="footer__item">Корпоративные подарки</li>
+            <li class="footer__item">Сопутствующие товары</li>
+            <li class="footer__item">Блог</li>
+          </ul>
+          <ul class="footer__col">
+            <li class="footer__item">Отзывы</li>
+            <li class="footer__item">Контакты</li>
+            <li class="footer__item">Персональные данные</li>
+            <li class="footer__item">Карта сайта</li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <div class="footer__contacts">
+            <div class="footer__title">Контакты</div>
+            <div class="footer__phone footer__contacts-item">
+              <span class="footer__icon icon-phone"></span>
+              <a href="tel:+7 (499) 322-28-29" class="footer__contact">+7 (499) 322-28-29</a>
+            </div>
+            <div class="footer__email footer__contacts-item">
+              <span class="footer__icon icon-email"></span>
+              <a href="mailto:pirojenka.rf@gmail.com" class="footer__contact">pirojenka.rf@gmail.com</a>
+            </div>
+            <div class="footer__location footer__contacts-item">
+              <span class="footer__icon icon-geolocation"></span>
+              <a href="" class="footer__contact">Москва, 1-я Магистральная, 22 </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="popup-wrapper">
+
+</div>
+
+<!-- <div class="popup-wrapper__item popup-item">
+	<div class="popup-item__body">
+		<div class="popup-item__top">
+			<div class="popup-item__title">
+
+			</div>
+			<button class="popup-item__close popup-close" type="button"><span></span></button>
+		</div>
+		<div class="popup-item__content">
+			
+		</div>
+	</div>
+</div> -->
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

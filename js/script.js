@@ -463,6 +463,7 @@ myPopup(); // ПОПАПЫ */
 let productsCategory = () => {
   let productsCategoryNav = document.querySelectorAll('.products__category'),
     productsCategoryContent = document.querySelectorAll('.products__categories-dish'),
+    productsCategoryPrice = document.querySelectorAll('.products__price-item'),
     productsCategoryName
   productsCategoryNav.forEach(item => {
     item.addEventListener('click', selectProductsCategoryNav)
@@ -478,6 +479,10 @@ let productsCategory = () => {
   }
   function selectProductsCategoryContent(productsCategoryName) {
     productsCategoryContent.forEach(item => {
+      item.classList.contains(productsCategoryName) ? item.classList.add('tab-active') : item.classList.remove('tab-active')
+    })
+
+    productsCategoryPrice.forEach(item => {
       item.classList.contains(productsCategoryName) ? item.classList.add('tab-active') : item.classList.remove('tab-active')
     })
   }
